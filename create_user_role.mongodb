@@ -1,0 +1,23 @@
+const database = 'admin'
+
+// เลือกฐานข้อมูล
+use(database)
+
+// เรียกดูรายชื่อ user ในฐานข้อมูลที่เลือก
+db.getUsers()
+
+// ลบรายชื่อ User ที่ไม่ต้องการ
+// db.dropUser("samit")
+
+// สร้าง User ใหม่ใน MongoDB
+// db.createUser({
+//     user: "samit",
+//     pwd: "123456",
+//     roles: [
+//         {
+//             role: "userAdminAnyDatabase",
+//             db: "admin"
+//         },
+//         "readWriteAnyDatabase"
+//     ]
+// })
